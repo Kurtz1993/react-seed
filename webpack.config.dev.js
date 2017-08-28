@@ -6,16 +6,10 @@ const autoprefixer = require('autoprefixer');
 
 module.exports = webpackMerge(commonConfig, {
   devtool: 'inline-source-map',
-  entry: {
-    'main': [
-      'eventsource-polyfill', // necessary for hot reloading with IE
-      'webpack-hot-middleware/client?reload=true' //note that it reloads the page if hot module reloading fails.
-    ],
-    'admin': [
-      'eventsource-polyfill',
-      'webpack-hot-middleware/client?reload=true'
-    ]
-  },
+  entry: [
+    'eventsource-polyfill', // necessary for hot reloading with IE
+    'webpack-hot-middleware/client?reload=true' //note that it reloads the page if hot module reloading fails.
+  ],
   devServer: {
     contentBase: [
       path.resolve(__dirname, 'app/main'),
