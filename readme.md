@@ -20,6 +20,8 @@ OR
 
 `npm start`
 
+Then open your browser and go to `http://localhost:4000`.
+
 ## Test
 Basic test configurations with jsdom and enzyme are provided as well as some libraries to help you with your unit testing. To run testing simply type in your console:
 
