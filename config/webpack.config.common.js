@@ -95,7 +95,7 @@ module.exports = {
   },
   plugins: [
     new ProgressBarPlugin({
-      format: chalk.magenta.bold('build') + ' [' + chalk.green(':bar') + '] ' + chalk.green.bold(':percent') + ' ' + chalk.yellow.bold(':elapsed seconds') + ' ' + chalk.white(':msg'),
+      format: chalk.magenta.bold('Building') + ' [' + chalk.green(':bar') + '] ' + chalk.green.bold(':percent') + ' ' + chalk.yellow.bold(':elapsed seconds') + ' ' + chalk.white(':msg'),
       clear: false
     }),
     new ExtractTextPlugin({
