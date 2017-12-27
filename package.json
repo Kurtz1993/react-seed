@@ -3,6 +3,9 @@
   "version": "0.0.1",
   "private": true,
   "description": "Seed for react projects",
+  "engines": {
+    "node": ">=8.0.0 <9.0.0"
+  },
   "scripts": {
     "start": "webpack-dev-server --config ./config/webpack.config.local.js",
     "copy:html": "node tools/copy-html.js",
